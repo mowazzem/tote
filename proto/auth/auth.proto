@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package auth;
+
+import "proto/common/entity.proto";
+
+option go_package = "github.com/mowazzem/tote/protogen/go/auth";
+
+
+service AuthService {
+  rpc Github(common.Empty) returns(common.Empty) {}
+}
